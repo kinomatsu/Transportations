@@ -18,7 +18,7 @@ namespace Transportations
             InitializeComponent();
         }
 
-        // ── события ──────────────────────────────────────────────────────────
+        //события
 
         private void btnLogin_Click(object? sender, EventArgs e) => TryLogin();
 
@@ -29,7 +29,7 @@ namespace Transportations
             if (e.KeyCode == Keys.Enter) TryLogin();
         }
 
-        // ── логика ───────────────────────────────────────────────────────────
+        //логика
 
         private void TryLogin()
         {

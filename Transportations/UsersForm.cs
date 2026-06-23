@@ -27,7 +27,7 @@ namespace Transportations
             LoadUsers();
         }
 
-        // ── события ──────────────────────────────────────────────────────────
+        //события
 
         private void dgvUsers_SelectionChanged(object? sender, EventArgs e) =>
             FillRoleCombo();
@@ -44,7 +44,7 @@ namespace Transportations
         private void btnClose_Click(object? sender, EventArgs e) =>
             Close();
 
-        // ── логика ───────────────────────────────────────────────────────────
+        //логика
 
         private void LoadUsers()
         {

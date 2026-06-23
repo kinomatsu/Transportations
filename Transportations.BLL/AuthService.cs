@@ -98,7 +98,7 @@ namespace Transportations.BLL
             return _db.DeleteUser(login);
         }
 
-        // ── приватные вспомогательные ────────────────────────────────────────
+        //приватные вспомогательные
 
         private bool IsLockedOut() =>
             _lockoutEnd.HasValue && DateTime.Now < _lockoutEnd.Value;

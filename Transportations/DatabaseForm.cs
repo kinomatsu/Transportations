@@ -41,7 +41,7 @@ namespace Transportations
         private void btnDelete_Click(object? sender, EventArgs e)  => DeleteSelectedRow();
         private void btnRefresh_Click(object? sender, EventArgs e) => ReloadCurrentTable();
 
-        // ── данные ───────────────────────────────────────────────────────────
+        //данные
 
         private void LoadTableList()
         {
@@ -81,7 +81,7 @@ namespace Transportations
             catch (Exception ex) { ShowError(ex.Message); }
         }
 
-        // ── CRUD ─────────────────────────────────────────────────────────────
+        //CRUD
 
         private void OpenEditDialog(bool isNew)
         {

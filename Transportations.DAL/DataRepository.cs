@@ -98,7 +98,7 @@ namespace Transportations.DAL
                 "FROM Транспорт Т LEFT JOIN Рейсы Р ON Т.VehicleID=Р.ТранспортID " +
                 "GROUP BY Т.ГосНомер, Т.Марка");
 
-        // ── приватные вспомогательные ────────────────────────────────────────
+        //приватные вспомогательные
 
         private DataTable ExecuteQuery(string sql, object[]? parameters = null)
         {

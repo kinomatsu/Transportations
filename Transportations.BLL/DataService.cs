@@ -63,7 +63,7 @@ namespace Transportations.BLL
             _repo.DeleteRecord(tableName, pk, pkValue);
         }
 
-        // ── отчёты ──────────────────────────────────────────────────────────
+        //отчёты
 
         public DataTable ReportDriversByStatus() => _repo.ReportDriversByStatus();
         public DataTable ReportTripsByClient()   => _repo.ReportTripsByClient();
@@ -92,7 +92,7 @@ namespace Transportations.BLL
             File.WriteAllText(filePath, sb.ToString(), Encoding.UTF8);
         }
 
-        // ── приватные ────────────────────────────────────────────────────────
+        //приватные
 
         private static void EnsureCanEdit()
         {
