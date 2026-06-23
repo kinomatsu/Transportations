@@ -23,6 +23,7 @@ namespace Transportations
             btnProfile  = new Button();
             btnUsers    = new Button();
             btnLogout   = new Button();
+            btnInfo     = new Button();
             panelTop.SuspendLayout();
             panelCards.SuspendLayout();
             SuspendLayout();
@@ -49,13 +50,15 @@ namespace Transportations
             panelCards.Dock      = DockStyle.Fill;
             panelCards.BackColor = Color.FromArgb(244, 246, 250);
             panelCards.Controls.AddRange(new Control[] {
-                btnDatabase, btnReports, btnProfile, btnUsers, btnLogout });
+                btnDatabase, btnReports, btnProfile, btnUsers, btnLogout, btnInfo });
 
             SetCard(btnDatabase, "📋  База данных",         "Просмотр и редактирование",  new Point(50, 60),  btnDatabase_Click);
             SetCard(btnReports,  "📊  Отчёты",              "Аналитика и экспорт CSV",     new Point(300, 60), btnReports_Click);
             SetCard(btnProfile,  "👤  Профиль",             "Личный кабинет",              new Point(50, 200), btnProfile_Click);
             SetCard(btnUsers,    "👥  Пользователи",        "Управление ролями",           new Point(300, 200), btnUsers_Click);
             SetCard(btnLogout,   "🚪  Выйти",               "Завершить сеанс",             new Point(550, 130), btnLogout_Click);
+            SetCard(btnInfo, "ℹ️ Информация", "О приложении", new Point(550, 230), btnInfo_Click);
+            btnInfo.BackColor = Color.FromArgb(70, 120, 170); btnInfo.Size = new Size(160, 80);
             btnLogout.BackColor = Color.FromArgb(180, 60, 60);
             btnLogout.Size      = new Size(160, 80);
 
@@ -94,5 +97,6 @@ namespace Transportations
         private Button btnProfile  = null!;
         private Button btnUsers    = null!;
         private Button btnLogout   = null!;
+        private Button btnInfo = null!;
     }
 }
