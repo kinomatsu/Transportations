@@ -78,7 +78,7 @@ namespace Transportations.DAL
                 new[] { pkValue });
         }
 
-        // ── агрегированные запросы для отчётов ──────────────────────────────
+        //агрегированные запросы для отчётов
 
         /// <summary>Водители по статусу.</summary>
         public DataTable ReportDriversByStatus() =>
