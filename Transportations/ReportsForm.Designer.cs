@@ -54,27 +54,9 @@ namespace Transportations
             lblMenu.Size = new Size(180, 28);
             lblMenu.TabIndex = 0;
             lblMenu.Text = "Отчёты";
-            // 
-            // btnDrivers
-            // 
-            btnDrivers.Location = new Point(0, 0);
-            btnDrivers.Name = "btnDrivers";
-            btnDrivers.Size = new Size(75, 23);
-            btnDrivers.TabIndex = 1;
-            // 
-            // btnTrips
-            // 
-            btnTrips.Location = new Point(0, 0);
-            btnTrips.Name = "btnTrips";
-            btnTrips.Size = new Size(75, 23);
-            btnTrips.TabIndex = 2;
-            // 
-            // btnVehicles
-            // 
-            btnVehicles.Location = new Point(0, 0);
-            btnVehicles.Name = "btnVehicles";
-            btnVehicles.Size = new Size(75, 23);
-            btnVehicles.TabIndex = 3;
+            SetRptBtn(btnDrivers, "Водители по статусу", new Point(10, 60), btnDrivers_Click);
+            SetRptBtn(btnTrips, "Рейсы по клиентам", new Point(10, 125), btnTrips_Click);
+            SetRptBtn(btnVehicles, "Загрузка транспорта", new Point(10, 190), btnVehicles_Click);
             // 
             // panelTop
             // 
